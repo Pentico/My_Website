@@ -1,0 +1,89 @@
+
+/* Reset */
+/* reset */
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/*General */
+p {
+    float: left;
+    width: 100%;
+}
+img {
+    max-width: 100%;
+}
+.col-6 {
+    float: left;
+    width: 50%;
+}
+.col-4 {
+    float: left;
+    width: 33.33%;
+}
+.col-5 {
+    float: left;
+    width: 46.67%;
+}
+.col-7 {
+    float: left;
+    width: 53.33%;
+}
+.col-8 {
+    float: left;
+    width: 66.67%;
+}
+.col-9 {
+    float: left;
+    width: 75%;
+}
+.col-3 {
+    float: left;
+    width: 25%;
+}
+.row {
+    float: left;
+    width: 100%;
+}
+
+/* index page */
+header{
+
+    height: 90px;
+    line-height: 85px;
+    border-bottom:5px solid #E0CF87;
+    background: #154E6A;
+}
+
+.right{
+    float: right;
+    width: 60%;
+}
+
+.logo {
+    margin: 20px;
+}
+
+body {
+    background-color:darkgray;
+
+}
