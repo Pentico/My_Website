@@ -6,12 +6,55 @@
 
 
     <script src="Common/JQuery/jquery-2.1.4.min.js" type="text/javascript"></script>
-    <link href="Common/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="Common/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <link href="Common/bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="Common/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
     <link href="Common/css/website.css" rel="stylesheet">
 
     <style type="text/css">
 
+        .width_let_nav{
+            width: 70%;
+            padding-top: 20%;
+            height: 50%;
+        }
+
+        .badge{
+
+            background-color: #eb9316;
+        }
+
+        .right-nav {
+            float: right;
+            line-height: 30px;
+            font-size: 12px;
+            color: #FFF;
+            text-align: right;
+            margin-right: 20px;
+            margin-top: 10px;
+            width: 720px;
+        }
+        .right-nav a {
+            color: #FFF;
+        }
+        .right-nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            margin-top: 10px;
+            float: right;
+        }
+        nav a {
+            padding: 0 15px;
+            border-right: 1px solid #89A5B1;
+        }
+        nav a:last-child {
+            padding-right: 0;
+            border-right: none;
+        }
+        nav a.active {
+            color: #DFCE86;
+        }
     </style>
     <script>
 
@@ -29,16 +72,22 @@
         <!-- START OF NAV -->
         <div>
             <header class="row">
-            <a class="logo fl" href="index.html"><img src="Media/images/logo.png" alt=""/></a>
+                <a class="logo fl" href="index.html"><img src="Media/images/logo.png" alt=""/></a>
+
+               <div class="right-nav">
+
+                   <nav>
+                       <a data-toggle="tab" href="index.html">Home</a>
+                       <a data-toggle="develop" href="#">Development</a>
+                       <a data-toggle="" href="#develop">e-Shopping</a>
+                       <a data-toggle="" href="Pages/Entertainment/entertainment.html">Entertainment</a>
+                       <a data-toggle="" href="#">About me</a>
+                   </nav>
+
+               </div>
             </header>
 
-            <ul class=" right nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="index.html">Home</a></li>
-                <li><a data-toggle="" href="#">Development</a> </li>
-                <li><a data-toggle="" href="#">e-Shopping</a> </li>
-                <li><a data-toggle="" href="Pages/Entertainment/entertainment.html">Entertainment</a> </li>
-                <li><a data-toggle="" href="#">About me</a> </li>
-            </ul>
+
         </div>
 
         <!--END OF NAV -->
@@ -49,9 +98,9 @@
                 <div class="col-sm-12">
                     <div class="col-sm-4">
 
-                        <ul class="nav nav-pills nav-stacked">
+                        <ul class="nav nav-pills nav-stacked width_let_nav">
 
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="#">What's New</a></li>
                             <li><a href="#">SVN <span class="badge pull-right">50</span> </a></li>
                             <li><a href="#">iOS <span class="badge pull-right">50</span> </a></li>
                             <li><a href="#">VB.Net <span class="badge pull-right">50</span> </a></li>
@@ -64,7 +113,7 @@
 
                     <div class="col-sm-4">
 
-                        <h3 >
+                        <h3 class="develop" >
                             Wanna learn how to start your project from the begining
                             then you have come to the right place, all you have to do is
                             click on the right tab and you will find it
