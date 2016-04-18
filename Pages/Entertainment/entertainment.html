@@ -9,6 +9,7 @@
     <link href="../../Common/bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
     <script src="../../Common/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
     <link href="../../Common/css/website.css" rel="stylesheet">
+    <script href="../../Common/js/website.js" type="text/javascript"></script>
 
     <style type="text/css">
 
@@ -66,6 +67,15 @@
 
     <script>
 
+        $(document).ready(function () {
+
+            $('#butt').click(function () {
+
+                $('#imgs').load('see.html');
+
+            });
+
+        });
 
     </script>
 </head>
@@ -80,12 +90,13 @@
             <div class="right-nav">
 
                 <nav>
-                    <a class="active" data-toggle="" href="../../index.html">Home</a>
-                    <a data-toggle="" href="#">Development</a>
-                    <a data-toggle="" href="#">e-Shopping</a>
-                    <a data-toggle="" href="entertainment.html">Entertainment</a>
-                    <a data-toggle="" href="#">About me</a>
+                    <a class="active" href="../../index.html">Home</a>
+                    <a  href="../Developer/developer.html">Development</a>
+                    <a  href="../e-Shopping/e-Shopping.html">e-Shopping</a>
+                    <a  href="entertainment.html">Entertainment</a>
+                    <a href="../About/about.html">About</a>
                 </nav>
+
             </div>
 
         </header>
@@ -93,16 +104,8 @@
         <!--Add bootstrap tab-toggle here -->
 
         <div class="right-nav">
-            <nav>
-                <a class="btn btn-primary btn-sm">Default Label</a>
-                <a class="btn btn-primary btn-sm">Default Label</a>
-                <a class="btn btn-primary btn-sm">Default Label</a>
-                <a class="btn btn-primary btn-sm">Default Label</a>
-                <a class="btn btn-primary btn-sm">Default Label</a>
-            </nav>
-        </div>
 
-    </div>
+        </div>
     <!--End of Nav -->
     <!--START MAIN_CONTENT -->
 
@@ -127,9 +130,11 @@
             <div class="col-sm-4">
 
                 <h3 >
+                    <span id="imgs"></span>
                     Wanna learn how to start your project from the begining
                     then you have come to the right place, all you have to do is
                     click on the right tab and you will find it
+                    <button id="butt" class="btn-default">Wanna see more</button>
                 </h3>
                 <h3 >
                     Wanna learn how to start your project from the begining
